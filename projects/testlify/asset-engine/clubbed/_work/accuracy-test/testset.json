@@ -1,0 +1,402 @@
+[
+{
+"idx": 13,
+"asset": "Hiring Metrics Master Guide: 20+ KPIs with Benchmarks, Formulas & Assessment-Quality Tracking (Interactive Calculator)",
+"stratum": "fixed50"
+},
+{
+"idx": 24,
+"asset": "Time-to-Hire: Definition, Benchmarks, Formula & How Assessments Reduce It (with Industry Data)",
+"stratum": "fixed50"
+},
+{
+"idx": 28,
+"asset": "Pre-Employment Test-Type & Role Selector Guide: Which Assessment Is Right for Your Role",
+"stratum": "fixed50"
+},
+{
+"idx": 29,
+"asset": "Management & Leadership Skills Assessment Kit: Sample Questions + Scorecard for Hiring Leaders",
+"stratum": "fixed50"
+},
+{
+"idx": 30,
+"asset": "Cognitive Aptitude Tests in Hiring: Validity Evidence, Score Cutoffs, Sample Questions & Role-Fit Selection Guide",
+"stratum": "fixed50"
+},
+{
+"idx": 35,
+"asset": "NYC Local Law 144 / Ethical AI Hiring Compliance Guide: Reading a Bias Audit + State-by-State Vendor Checklist",
+"stratum": "fixed50"
+},
+{
+"idx": 78,
+"asset": "AI in Recruitment 2026: Benchmark Study on Adoption, Time-to-Hire Gains & Bias Outcomes",
+"stratum": "fixed50"
+},
+{
+"idx": 100,
+"asset": "AI in Hiring, Disentangled: Assessment AI vs. Resume-Screening vs. HR-Ops AI",
+"stratum": "fixed50"
+},
+{
+"idx": 102,
+"asset": "Hiring Compliance Checklist: EEOC, UGESP, Adverse Impact & Pre-Employment Assessment Legal/Privacy Requirements",
+"stratum": "fixed50"
+},
+{
+"idx": 103,
+"asset": "Free C++ Developer Skills Test",
+"stratum": "fixed50"
+},
+{
+"idx": 121,
+"asset": "Free Quantitative Aptitude Test",
+"stratum": "fixed50"
+},
+{
+"idx": 126,
+"asset": "Free Culture Add / Culture-Fit Assessment",
+"stratum": "fixed50"
+},
+{
+"idx": 153,
+"asset": "Adaptive vs. Fixed-Form Assessment Comparison: When to Use Each (+ What the Score Report Tells You)",
+"stratum": "fixed50"
+},
+{
+"idx": 154,
+"asset": "Free SEO Copywriting Skills Test",
+"stratum": "fixed50"
+},
+{
+"idx": 169,
+"asset": "WordPress Developer Skills Assessment Guide",
+"stratum": "fixed50"
+},
+{
+"idx": 177,
+"asset": "Free Project Management Aptitude Test",
+"stratum": "fixed50"
+},
+{
+"idx": 178,
+"asset": "Innate vs Acquired Skills in Hiring: Which to Test for Which Roles (+ Assessment Selector)",
+"stratum": "fixed50"
+},
+{
+"idx": 180,
+"asset": "Free Abstract Reasoning Test",
+"stratum": "fixed50"
+},
+{
+"idx": 187,
+"asset": "Free Call Center Candidate Assessment Guide",
+"stratum": "fixed50"
+},
+{
+"idx": 192,
+"asset": "Free Skills Assessment Certificates: What They Signal, How to Earn One, and Sample Questions per Test",
+"stratum": "fixed50"
+},
+{
+"idx": 204,
+"asset": "Personality Assessment in Hiring: Using Validated Instruments Without Adverse Impact",
+"stratum": "fixed50"
+},
+{
+"idx": 222,
+"asset": "React Native Developer Interview Guide (iOS, Android, Cross-Platform)",
+"stratum": "fixed50"
+},
+{
+"idx": 233,
+"asset": "Free Numerical Reasoning Test for Hiring: Sample Questions by Difficulty + Role Benchmarks",
+"stratum": "fixed50"
+},
+{
+"idx": 236,
+"asset": "Free SAP SD Consultant/Analyst Assessment",
+"stratum": "fixed50"
+},
+{
+"idx": 260,
+"asset": "Free Embedded C Skills Test (RTOS vs Bare-Metal)",
+"stratum": "fixed50"
+},
+{
+"idx": 308,
+"asset": "Pre-Employment Assessment Certifications & Standards 2026: EEOC, Validity & Adoption Compared",
+"stratum": "fixed50"
+},
+{
+"idx": 311,
+"asset": "Bad Hire Cost Calculator: Estimate Your True Cost by Role, Seniority & Industry + Assessment ROI Offset",
+"stratum": "fixed50"
+},
+{
+"idx": 324,
+"asset": "Skills-Test Candidate Rejection Email Templates: Stage-by-Stage Scripts + Assessment Feedback for Every Outcome",
+"stratum": "fixed50"
+},
+{
+"idx": 337,
+"asset": "Free Entry-Level Hiring Skills Screener (grammar+reasoning+math)",
+"stratum": "fixed50"
+},
+{
+"idx": 341,
+"asset": "Skills Gap at Hire vs. Post-Hire Upskilling Report",
+"stratum": "fixed50"
+},
+{
+"idx": 356,
+"asset": "Global Skills Assessment Adoption Index: Which Countries and Industries Adopt Pre-Employment Testing Fastest",
+"stratum": "fixed50"
+},
+{
+"idx": 384,
+"asset": "Pre-Employment Assessment: The Complete Guide to Test Types, Validity, Bias & Candidate Experience",
+"stratum": "fixed50"
+},
+{
+"idx": 393,
+"asset": "Skills-Based Talent Management: How Assessment Data Drives Hiring, Development, Internal Mobility & Succession",
+"stratum": "fixed50"
+},
+{
+"idx": 427,
+"asset": "Assessment Centre vs. Online Skills Test: When Each Fits, with Cost-Validity Comparison",
+"stratum": "fixed50"
+},
+{
+"idx": 434,
+"asset": "Startup Hiring Playbook: Screening 100+ Applicants with a Tiny Team Using Skills Tests",
+"stratum": "fixed50"
+},
+{
+"idx": 435,
+"asset": "Skills Assessment vs Competency Mapping Tools: Which to Use for Hiring vs Workforce Planning",
+"stratum": "fixed50"
+},
+{
+"idx": 445,
+"asset": "The AI Interview Cheating Report: How Often Candidates Read AI Answers Live \u2014 and Whether Anyone Can Tell",
+"stratum": "fixed50"
+},
+{
+"idx": 446,
+"asset": "Death of the Resume Filter: What Share of Applications Are Now AI-Generated \u2014 and What Still Signals a Real Candidate",
+"stratum": "fixed50"
+},
+{
+"idx": 447,
+"asset": "The Degree Doesn't Predict the Hire: Performance Data on Capability-Screened vs Degree-Required Roles",
+"stratum": "fixed50"
+},
+{
+"idx": 448,
+"asset": "Culture Fit or Cover Story? How Often 'Soft-Skill' Rejections Are Really Bias \u2014 and What Actually Predicts On-the-Job Fit",
+"stratum": "fixed50"
+},
+{
+"idx": 449,
+"asset": "Does LeetCode Predict the Engineer? A Data Study of Algorithm-Trivia Screens vs Real Performance",
+"stratum": "fixed50"
+},
+{
+"idx": 450,
+"asset": "The Proxy Candidate Problem: How Fake and Stolen-Identity Applicants Pass Remote Screening",
+"stratum": "fixed50"
+},
+{
+"idx": 453,
+"asset": "Skills-Based Hiring Statistics (sourced, updated yearly)",
+"stratum": "fixed50"
+},
+{
+"idx": 455,
+"asset": "The Structured Interview Checklist (interactive + downloadable)",
+"stratum": "fixed50"
+},
+{
+"idx": 457,
+"asset": "Free Practice Tests + Public Sample Question Bank",
+"stratum": "fixed50"
+},
+{
+"idx": 459,
+"asset": "The Complete List of Skills to Test, by Role (500+)",
+"stratum": "fixed50"
+},
+{
+"idx": 465,
+"asset": "What's Your Hiring-Bias Profile? (quiz + shareable result)",
+"stratum": "fixed50"
+},
+{
+"idx": 467,
+"asset": "We Analyzed [N] Assessments: What Actually Predicts a Good Hire",
+"stratum": "fixed50"
+},
+{
+"idx": 469,
+"asset": "The Skills-Gap Index (which skills each industry is short on, annual)",
+"stratum": "fixed50"
+},
+{
+"idx": 470,
+"asset": "Most In-Demand Skills, Ranked (quarterly)",
+"stratum": "fixed50"
+},
+{
+"idx": 429,
+"asset": "Skills Tests vs Certifications vs Work Experience: Which Hiring Signal Actually Predicts Performance",
+"stratum": "comparison"
+},
+{
+"idx": 404,
+"asset": "Psychometric Tests vs Skills Assessments: Which Actually Predicts Job Performance? (Original Data Study + Blended Stack Template)",
+"stratum": "comparison"
+},
+{
+"idx": 197,
+"asset": "AI vs. Human in Hiring: Decision Framework with Scoring Rubric & Assessment Review",
+"stratum": "comparison"
+},
+{
+"idx": 128,
+"asset": "Degree vs. Skills & Credential Verification: Decision Guide + Where Skills Tests Fill the Gaps",
+"stratum": "comparison"
+},
+{
+"idx": 68,
+"asset": "Hard Skills vs Soft Skills Assessment Guide: Which to Test, How, and What the Data Shows (with Decision Matrix)",
+"stratum": "comparison"
+},
+{
+"idx": 67,
+"asset": "Internal vs External Hiring Decision Guide: When to Assess Internally vs Externally + Promotion-Readiness Rubric",
+"stratum": "comparison"
+},
+{
+"idx": 286,
+"asset": "Aptitude Testing vs Skills Testing: When to Use Which (+ Role Selector & Sample Questions)",
+"stratum": "comparison"
+},
+{
+"idx": 15,
+"asset": "AI Resume Screening vs Skills Testing: An Independent Accuracy Benchmark with an Evaluation Rubric",
+"stratum": "comparison"
+},
+{
+"idx": 55,
+"asset": "Virtual Job Tryout / Assessment Center vs Skills Test: Role-by-Role Comparison Guide",
+"stratum": "comparison"
+},
+{
+"idx": 9,
+"asset": "Personality Tests for Hiring: Big 5 vs DISC vs MBTI \u2014 Validity, Legal Defensibility, Role-Fit & Sample Questions",
+"stratum": "comparison"
+},
+{
+"idx": 168,
+"asset": "Admin & Receptionist Skills Assessment Guide",
+"stratum": "entity"
+},
+{
+"idx": 175,
+"asset": "Free MS Office Skills Test (Word + Excel)",
+"stratum": "entity"
+},
+{
+"idx": 63,
+"asset": "Turnover & Attrition Risk Calculator: Build a Flight-Risk Score from Assessment Data + Cost-per-Departure Benchmarks",
+"stratum": "entity"
+},
+{
+"idx": 2,
+"asset": "Role-by-Role Hiring Kit Library: JD Template + Skills Assessment Rubric + Sample Test Questions per Role",
+"stratum": "entity"
+},
+{
+"idx": 262,
+"asset": "Free MS Word Skills Test",
+"stratum": "entity"
+},
+{
+"idx": 79,
+"asset": "Technical Recruiting Cheat Sheet: Skills to Screen for 30+ Tech Roles, With Assessment Recommendations & Red-Flag Questions",
+"stratum": "entity"
+},
+{
+"idx": 235,
+"asset": "Free QA Automation Skills Test (Selenium/Cypress/Playwright)",
+"stratum": "entity"
+},
+{
+"idx": 382,
+"asset": "Selenium Automation Tester Hiring Assessment Guide",
+"stratum": "entity"
+},
+{
+"idx": 360,
+"asset": "Free JavaScript Skills Test: Public Sample Questions, Worked Answers, and a Shareable Score Certificate",
+"stratum": "entity"
+},
+{
+"idx": 367,
+"asset": "Cloud Engineer Technical Assessment Guide",
+"stratum": "entity"
+},
+{
+"idx": 321,
+"asset": "12 Core Hiring & Assessment Decisions Every Talent Team Faces (method comparison guide)",
+"stratum": "random"
+},
+{
+"idx": 443,
+"asset": "Cross-Functional Leader Hiring Assessment Kit: Structured Questions with Behavioral Scoring Rubrics",
+"stratum": "random"
+},
+{
+"idx": 300,
+"asset": "Learning Agility Assessment for Engineers",
+"stratum": "random"
+},
+{
+"idx": 342,
+"asset": "Free Data-Entry Speed & Accuracy Test",
+"stratum": "random"
+},
+{
+"idx": 242,
+"asset": "Power BI Interview Question Bank + Data Analyst Skills Assessment",
+"stratum": "random"
+},
+{
+"idx": 413,
+"asset": "Screening Nonlinear, Passive & Global Candidates: Skills-Based Assessment Frameworks",
+"stratum": "random"
+},
+{
+"idx": 39,
+"asset": "AI Proctoring Buyer's Guide: Methodology, False-Positive Rates, Candidate Experience & NYC LL 144 / Mode-by-Stage Selection",
+"stratum": "random"
+},
+{
+"idx": 284,
+"asset": "Call Center Hiring Assessment Guide: Skills Tests by Role with Turnover Benchmarks and Sample Questions",
+"stratum": "random"
+},
+{
+"idx": 124,
+"asset": "Free Admin & Office Roles Aptitude Test",
+"stratum": "random"
+},
+{
+"idx": 266,
+"asset": "Language Proficiency Interview Guide for Global Hiring Teams",
+"stratum": "random"
+}
+]
