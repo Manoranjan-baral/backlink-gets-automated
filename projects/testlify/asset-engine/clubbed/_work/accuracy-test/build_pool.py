@@ -15,6 +15,7 @@ REPO = os.path.abspath(os.path.join(WORK, "..", "..", "..", "..", ".."))
 IDX = os.path.join(WORK, "content-index")
 CONTENT = os.path.join(REPO, "projects/testlify/content-database.csv")
 POOL_DENSE_N = 100; POOL_EXPAND_Q = 5; POOL_EXPAND_N = 30; MAX_POOL = 200
+SUF = os.environ.get("SUFFIX", "")   # e.g. "_smoke" -> testset_smoke.json / pool_smoke.jsonl
 
 
 def expand_queries(asset, n=POOL_EXPAND_Q):
@@ -67,10 +68,10 @@ def ungated_keyword_hits(idx):
     return hits
 
 
-testset = json.load(open(os.path.join(HERE, "testset.json")))
+testset = json.load(open(os.path.join(HERE, f"testset{SUF}.json")))
 if os.environ.get("SMOKE"):
     testset = testset[:2]
-out = open(os.path.join(HERE, "pool.jsonl"), "w")
+out = open(os.path.join(HERE, f"pool{SUF}.jsonl"), "w")
 for t in testset:
     idx, asset = t["idx"], t["asset"]
     src = {}   # url -> set(sources)
@@ -89,4 +90,4 @@ for t in testset:
         cands = (pri + fill)[:MAX_POOL]
     out.write(json.dumps({"idx": idx, "candidates": cands}) + "\n"); out.flush()
     print(f"  idx {idx}: pool {len(cands)}", file=sys.stderr)
-out.close(); print("wrote pool.jsonl", file=sys.stderr)
+out.close(); print(f"wrote pool{SUF}.jsonl", file=sys.stderr)

@@ -1,0 +1,102 @@
+[
+{
+"idx": 13,
+"asset": "Hiring Metrics Master Guide: 20+ KPIs with Benchmarks, Formulas & Assessment-Quality Tracking (Interactive Calculator)",
+"stratum": "fixed50"
+},
+{
+"idx": 24,
+"asset": "Time-to-Hire: Definition, Benchmarks, Formula & How Assessments Reduce It (with Industry Data)",
+"stratum": "fixed50"
+},
+{
+"idx": 28,
+"asset": "Pre-Employment Test-Type & Role Selector Guide: Which Assessment Is Right for Your Role",
+"stratum": "fixed50"
+},
+{
+"idx": 29,
+"asset": "Management & Leadership Skills Assessment Kit: Sample Questions + Scorecard for Hiring Leaders",
+"stratum": "fixed50"
+},
+{
+"idx": 30,
+"asset": "Cognitive Aptitude Tests in Hiring: Validity Evidence, Score Cutoffs, Sample Questions & Role-Fit Selection Guide",
+"stratum": "fixed50"
+},
+{
+"idx": 429,
+"asset": "Skills Tests vs Certifications vs Work Experience: Which Hiring Signal Actually Predicts Performance",
+"stratum": "comparison"
+},
+{
+"idx": 404,
+"asset": "Psychometric Tests vs Skills Assessments: Which Actually Predicts Job Performance? (Original Data Study + Blended Stack Template)",
+"stratum": "comparison"
+},
+{
+"idx": 197,
+"asset": "AI vs. Human in Hiring: Decision Framework with Scoring Rubric & Assessment Review",
+"stratum": "comparison"
+},
+{
+"idx": 128,
+"asset": "Degree vs. Skills & Credential Verification: Decision Guide + Where Skills Tests Fill the Gaps",
+"stratum": "comparison"
+},
+{
+"idx": 68,
+"asset": "Hard Skills vs Soft Skills Assessment Guide: Which to Test, How, and What the Data Shows (with Decision Matrix)",
+"stratum": "comparison"
+},
+{
+"idx": 168,
+"asset": "Admin & Receptionist Skills Assessment Guide",
+"stratum": "entity"
+},
+{
+"idx": 175,
+"asset": "Free MS Office Skills Test (Word + Excel)",
+"stratum": "entity"
+},
+{
+"idx": 63,
+"asset": "Turnover & Attrition Risk Calculator: Build a Flight-Risk Score from Assessment Data + Cost-per-Departure Benchmarks",
+"stratum": "entity"
+},
+{
+"idx": 2,
+"asset": "Role-by-Role Hiring Kit Library: JD Template + Skills Assessment Rubric + Sample Test Questions per Role",
+"stratum": "entity"
+},
+{
+"idx": 262,
+"asset": "Free MS Word Skills Test",
+"stratum": "entity"
+},
+{
+"idx": 321,
+"asset": "12 Core Hiring & Assessment Decisions Every Talent Team Faces (method comparison guide)",
+"stratum": "random"
+},
+{
+"idx": 443,
+"asset": "Cross-Functional Leader Hiring Assessment Kit: Structured Questions with Behavioral Scoring Rubrics",
+"stratum": "random"
+},
+{
+"idx": 300,
+"asset": "Learning Agility Assessment for Engineers",
+"stratum": "random"
+},
+{
+"idx": 342,
+"asset": "Free Data-Entry Speed & Accuracy Test",
+"stratum": "random"
+},
+{
+"idx": 242,
+"asset": "Power BI Interview Question Bank + Data Analyst Skills Assessment",
+"stratum": "random"
+}
+]
