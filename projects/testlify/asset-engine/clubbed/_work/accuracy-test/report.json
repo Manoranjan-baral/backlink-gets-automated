@@ -1,0 +1,2279 @@
+{
+ "n_total": 80,
+ "n_scored": 15,
+ "n_zero_owned": 65,
+ "suffix": "",
+ "has_core_tiers": true,
+ "overall": {
+  "recall_full": 0.677,
+  "recall_reachable": 0.836,
+  "recall_core": 0.747,
+  "precision": 0.265,
+  "precision_core": 0.244,
+  "capability_gap": 0.201
+ },
+ "by_stratum": {
+  "entity": {
+   "n": 4,
+   "recall_full": 0.738,
+   "recall_reachable": 0.92,
+   "recall_core": 0.738,
+   "precision": 0.27,
+   "precision_core": 0.27,
+   "capability_gap": 0.221,
+   "dense@50": 0.579,
+   "dense@75": 0.668,
+   "dense@100": 0.723
+  },
+  "fixed50": {
+   "n": 6,
+   "recall_full": 0.657,
+   "recall_reachable": 0.803,
+   "recall_core": 0.833,
+   "precision": 0.324,
+   "precision_core": 0.273,
+   "capability_gap": 0.198,
+   "dense@50": 0.525,
+   "dense@75": 0.628,
+   "dense@100": 0.714
+  },
+  "comparison": {
+   "n": 5,
+   "recall_full": 0.652,
+   "recall_reachable": 0.808,
+   "recall_core": 0.652,
+   "precision": 0.189,
+   "precision_core": 0.189,
+   "capability_gap": 0.19,
+   "dense@50": 0.457,
+   "dense@75": 0.604,
+   "dense@100": 0.71
+  }
+ },
+ "per_idea": [
+  {
+   "idx": 2,
+   "stratum": "entity",
+   "asset": "Role-by-Role Hiring Kit Library: JD Template + Skills Assessment Rubric + Sample Test Questions per Role",
+   "n_relevant": 48,
+   "n_core": 48,
+   "catalogue_len": 75,
+   "recall_full": 0.229,
+   "recall_reachable": 0.786,
+   "recall_core": 0.229,
+   "precision": 0.147,
+   "precision_core": 0.147,
+   "capability_gap": 0.708,
+   "missed": [
+    {
+     "url": "https://testlify.com/hiring-guides/talent-acquisition-specialist-hiring/",
+     "title": "How to hire a Talent Acquisition Specialist | Testlify",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/craft-effective-job-descriptions/",
+     "title": "How to craft effective job descriptions",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/job-description-generator/",
+     "title": "job description generator",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/develop-a-job-profile/",
+     "title": "How to develop a job profile?",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/job-profile-components/",
+     "title": "Key job profile components",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/logistics-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Logistics Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hiring-guides/medical-coder-hiring-guide/",
+     "title": "Medical Coder Hiring Guide",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/quality-assurance-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Quality Assurance Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/distribution-manager-interview-questions-to-ask-job-applicants/",
+     "title": "60 Distribution Manager interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/data-modeling-interview-questions-to-ask-job-applicants/",
+     "title": "45 Data Modeling interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/creative-director-interview-questions-to-ask-job-applicants/",
+     "title": "60 Creative Director interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/interview-questions-for-adobe-analytics-developer/",
+     "title": "30 Interview questions to ask while hiring an Adobe Analytics developer",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/billing-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Billing Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/data-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Data Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/marketing-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Marketing Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hiring-guides/system-administrator-hiring-guide/",
+     "title": "How to hire a System Administrator | Hiring Guide \u2013 Testlify",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    },
+    {
+     "url": "https://testlify.com/stellenbeschreibung/",
+     "title": "Stellenbeschreibung",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hiring-guides/project-coordinator-hiring-guide/",
+     "title": "Project Coordinator Hiring Guide",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/treasury-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Treasury Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/what-should-you-include-in-your-skill-assessment-test/",
+     "title": "What should you include in your skill assessment test",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/marketing-operations-manager-interview-questions-to-ask-job-applicants/",
+     "title": "60 Marketing Operations Manager interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/marketing-operations-specialist-interview-questions-to-ask-job-applicants/",
+     "title": "60 Marketing Operations Specialist interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/trade-support-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Trade Support Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/business-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "40 Business Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/risk-management-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Risk Management Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/business-operations-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Business Operations Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/database-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Database Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/systems-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Systems Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/job-description-templates/",
+     "title": "Job Description",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/medical-coder-interview-questions-to-ask-job-applicants/",
+     "title": "60 Medical Coder interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hiring-guides/account-executive-hiring-guide/",
+     "title": "Account Executive Hiring Guide",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hiring-guides/",
+     "title": "Hiring guides",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hiring-guides/office-manager-hiring-guide/",
+     "title": "Office Manager Hiring Guide",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/it-support-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 IT Support Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/loan-officer-interview-questions-to-ask-job-applicants/",
+     "title": "60 Loan Officer interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/operations-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Operations Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/investment-banking-analyst-interview-questions-to-ask-job-applicants/",
+     "title": "60 Investment Banking Analyst interview questions to ask job applicants",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 9,
+   "stratum": "comparison",
+   "asset": "Personality Tests for Hiring: Big 5 vs DISC vs MBTI \u2014 Validity, Legal Defensibility, Role-Fit & Sample Questions",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 13,
+   "stratum": "fixed50",
+   "asset": "Hiring Metrics Master Guide: 20+ KPIs with Benchmarks, Formulas & Assessment-Quality Tracking (Interactive Calculator)",
+   "n_relevant": 51,
+   "n_core": 49,
+   "catalogue_len": 84,
+   "recall_full": 0.843,
+   "recall_reachable": 0.956,
+   "recall_core": 0.878,
+   "precision": 0.512,
+   "precision_core": 0.512,
+   "capability_gap": 0.118,
+   "missed": [
+    {
+     "url": "https://testlify.com/job-offer-acceptance-rate-calculator/",
+     "title": "Job Offer Acceptance Rate calculator",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/time-to-fill/",
+     "title": "Time to Fill",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-reduce-the-time-to-hire/",
+     "title": "How to reduce the time to hire: 7 ways to recruit candidates quicker",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/make-faster-hiring-decisions-with-real-time-analytics/",
+     "title": "How to make faster hiring decisions with real-time analytics?",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/sourcing-channel-efficiency-calculator/",
+     "title": "Sourcing channel efficiency calculator",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/5-benefits-of-integrating-employment-assessments-into-your-hiring-process/",
+     "title": "5 benefits of integrating employment assessments into your hiring process",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/customer-success-stories/anima-health/",
+     "title": "How Anima Health cut phone interview time by 53% and brought consistency to hiring across engineering, design, and sales",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/cost-per-hire-calculator/",
+     "title": "Cost per hire calculator",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 15,
+   "stratum": "comparison",
+   "asset": "AI Resume Screening vs Skills Testing: An Independent Accuracy Benchmark with an Evaluation Rubric",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 24,
+   "stratum": "fixed50",
+   "asset": "Time-to-Hire: Definition, Benchmarks, Formula & How Assessments Reduce It (with Industry Data)",
+   "n_relevant": 26,
+   "n_core": 18,
+   "catalogue_len": 81,
+   "recall_full": 0.577,
+   "recall_reachable": 0.882,
+   "recall_core": 0.833,
+   "precision": 0.185,
+   "precision_core": 0.185,
+   "capability_gap": 0.346,
+   "missed": [
+    {
+     "url": "https://testlify.com/how-automated-candidate-scoring-systems-improve-hiring-speed/",
+     "title": "How automated candidate scoring systems improve hiring speed",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-long-should-the-hiring-process-take/",
+     "title": "How long should the hiring process take?",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/pre-hire-assessments-for-hr-and-recruitment-industry/",
+     "title": "Pre-hire assessments for HR and recruitment industry",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/recruitment-dashboard/",
+     "title": "How to create a recruitment dashboard that drive results?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-kpis/",
+     "title": "HR KPIs: What are they? Examples & formulas",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/high-volume-hiring-trends/",
+     "title": "High-volume hiring trends: What the latest data tells us this year",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/use-data-and-analytics-to-improve-recruitment-process/",
+     "title": "How to use data and analytics to improve recruitment outcomes (in 5 steps)",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-pre-employment-assessments-redefined-skill-based-hiring/",
+     "title": "How Pre-Employment Assessments Redefined Skill-Based Hiring",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/what-is-pre-hire-assessment/",
+     "title": "What is a pre-hire assessment? A complete guide",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/steps-to-streamline-your-hiring-process/",
+     "title": "10 Steps to streamline your hiring process",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/meet-aggressive-hiring-targets/",
+     "title": "How to meet aggressive hiring targets set by upper management",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 28,
+   "stratum": "fixed50",
+   "asset": "Pre-Employment Test-Type & Role Selector Guide: Which Assessment Is Right for Your Role",
+   "n_relevant": 41,
+   "n_core": 33,
+   "catalogue_len": 87,
+   "recall_full": 0.585,
+   "recall_reachable": 0.8,
+   "recall_core": 0.727,
+   "precision": 0.276,
+   "precision_core": 0.276,
+   "capability_gap": 0.268,
+   "missed": [
+    {
+     "url": "https://testlify.com/how-to-choose-the-right-cognitive-ability-test-for-hiring-top-talent/",
+     "title": "How to choose the right cognitive ability test for hiring top talent",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/pre-hire-assessments-for-sales/",
+     "title": "What types of pre-hire assessments work best for sales roles?",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/assess-entry-level-candidates-with-skills-assessment/",
+     "title": "How to assess entry-level candidates with skills assessment",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    },
+    {
+     "url": "https://testlify.com/what-role-do-data-driven-aptitude-assessment-play-in-hiring-success/",
+     "title": "What role do data-driven aptitude assessment play in hiring success",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/considerations-when-selecting-or-creating-hiring-assessment-test/",
+     "title": "Key considerations when selecting or creating hiring assessment test",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/elements-to-consider-when-creating-recruitment-tests/",
+     "title": "Key elements to consider when creating recruitment tests",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/top-10-pre-hire-assessment-platforms-for-enterprises/",
+     "title": "Best Pre-Hire Assessment Platforms for Enterprises: An Honest Buyer\u2019s Guide (2026)",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/maximize-hiring-success-with-a-comprehension-test/",
+     "title": "How to maximize hiring success with a comprehension test?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/pre-employment-screening-in-hiring-process/",
+     "title": "Pre-Employment Screening: What It Is, Why It Matters, and How to Do It Right in 2026",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/psychometric-test-2/",
+     "title": "Psychometric Test",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/psychometric-assessments-beyond-big-five-personality-test/",
+     "title": "Beyond the big five personality test: Exploring niche assessments for specialized roles",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-streamline-recruitment-with-hiring-assessments/",
+     "title": "How to Speed Up Recruitment with Hiring Assessments (2026 Guide)",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/tailoring-aptitude-tests-for-specific-industries-best-practices/",
+     "title": "Tailoring aptitude tests for specific industries: Best practices",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/what-are-talent-assessments/",
+     "title": "What are talent assessments?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-incorporate-analytical-ability-test-into-your-recruitment-strategy/",
+     "title": "How to incorporate analytical ability test into your recruitment strategy",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/types-of-psychometric-tests-and-what-they-measure/",
+     "title": "The different types of psychometric tests and what they measure",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-use-skills-assessment-for-executive-roles/",
+     "title": "How to use skills assessment to assess for executive roles",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 29,
+   "stratum": "fixed50",
+   "asset": "Management & Leadership Skills Assessment Kit: Sample Questions + Scorecard for Hiring Leaders",
+   "n_relevant": 72,
+   "n_core": 24,
+   "catalogue_len": 77,
+   "recall_full": 0.264,
+   "recall_reachable": 0.365,
+   "recall_core": 0.792,
+   "precision": 0.247,
+   "precision_core": 0.247,
+   "capability_gap": 0.278,
+   "missed": [
+    {
+     "url": "https://testlify.com/adaptive-leadership/",
+     "title": "What Is Adaptive Leadership? Definition, Principles, and HR Applications (2026)",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-measure-roi-of-talent-management-initiatives/",
+     "title": "How to measure the ROI of your talent management initiatives?",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-evaluate-candidates-skills-with-a-business-judgement-test/",
+     "title": "How to evaluate candidates\u2019 skills with a business judgement test",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-hire-top-talent-using-project-manager-test/",
+     "title": "How to hire top talent using project manager test",
+     "core": false,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/implement-a-performance-management-system/",
+     "title": "How to implement a performance management system?",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/insightful-financial-management-test/",
+     "title": "Insightful Financial Management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/product-management-test/",
+     "title": "Product Management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/capability-assessment-tools/",
+     "title": "Capability assessment tools",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/self-management-test/",
+     "title": "Self Management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-can-an-accounting-manager-test-unveil-candidates-hidden-abilities/",
+     "title": "How can an accounting manager test unveil candidates\u2019 hidden abilities?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/role-of-emotional-intelligence-in-leadership-and-hiring/",
+     "title": "The role of emotional intelligence in leadership and hiring",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/why-is-an-accounting-manager-test-essential-for-recruiting/",
+     "title": "Why is an accounting manager test essential for recruiting?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/competences/",
+     "title": "Competences",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/tips-to-evaluate-change-management-skills/",
+     "title": "5 tips to evaluate change management skills",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/types-of-skills-hiring-test-assess-in-candidates/",
+     "title": "What types of skills can hiring test assess in candidates",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/skills-matrix/",
+     "title": "Skills Matrix: What It Is, How to Build One, and Why It Matters in 2026",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-run-role-simulations/",
+     "title": "How to run role simulations through video interview prompts?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/micro-management/",
+     "title": "Micro-management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/steps-to-create-a-leadership-development-plan/",
+     "title": "Leadership Development Plan: A 7-Step Guide for 2026",
+     "core": false,
+     "pool_sources": [
+      "expand",
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/competency-mapping/",
+     "title": "What is competency mapping and how can organizations implement it?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/performance-management/",
+     "title": "Performance Management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/benefits-of-implementing-servant-leadership-in-hr/",
+     "title": "Benefits of Servant Leadership in HR: What the Data Shows",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/human-resource-management/",
+     "title": "Human Resource Management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/implementing-performance-management-system-in-smbs/",
+     "title": "Implementing performance management system in small businesses",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/strategies-to-create-a-leadership-pipeline/",
+     "title": "Leadership Pipeline: 8 Proven Strategies to Build One in 2026",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/competencies/",
+     "title": "Competencies",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-can-a-business-judgement-test-unveil-candidates-hidden-abilities/",
+     "title": "How can a business judgement test unveil candidates\u2019 hidden abilities?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hire-a-hr-manager/",
+     "title": "How to hire an HR manager: the complete guide for 2026",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/what-are-the-4-pillars-of-talent-management/",
+     "title": "What are the 4 pillars of talent management?",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/competency-framework/",
+     "title": "What is a competency framework and how to develop one?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/best-practices-for-remote-employee-management/",
+     "title": "Best practices for remote employee management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-simplify-candidate-screening-with-project-manager-test/",
+     "title": "How to simplify candidate screening with project manager test",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/management-career-suggestor-test/",
+     "title": "Management Career Suggestor",
+     "core": true,
+     "pool_sources": [
+      "expand",
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-evaluate-candidates-skills-with-an-accounting-manager-test/",
+     "title": "How to evaluate candidates\u2019 skills with an accounting manager test",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/steps-to-ensure-a-smooth-probation-period-management/",
+     "title": "What steps ensure a smooth probation period management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-incorporate-project-manager-test-into-your-recruitment-strategy/",
+     "title": "How to incorporate project manager test into your recruitment strategy",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/narcissistic-leadership/",
+     "title": "Narcissistic Leadership",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-can-a-customer-success-manager-test-unveil-candidates-hidden-abilities/",
+     "title": "How can a customer success manager test unveil candidates\u2019 hidden abilities?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/tips-to-evaluate-influencer-relationship-management-skills/",
+     "title": "5 tips to evaluate influencer relationship management skills",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/universal-competency-framework/",
+     "title": "Universal Competency Framework",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/reasons-to-study-human-resource-management/",
+     "title": "Top reasons to study human resource management in 2026",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/construction-manager-aptitude/",
+     "title": "Construction Manager Aptitude",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/ethical-leadership/",
+     "title": "Ethical Leadership",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hire-top-talent-using-following-directions-test/",
+     "title": "How to hire top talent using following directions test",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-can-a-product-manager-assessment-unveil-candidates-hidden-abilities/",
+     "title": "How can a product manager assessment unveil candidates\u2019 hidden abilities?",
+     "core": false,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-ai-shapes-leadership-development-for-a-team/",
+     "title": "Integrating AI into leadership development for a stronger talent pipeline",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/importance-of-conflict-management-for-workplace-relationships/",
+     "title": "Importance of conflict management for workplace relationships",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/management-trainee/",
+     "title": "Management Trainee",
+     "core": true,
+     "pool_sources": [
+      "expand",
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/time-management-test/",
+     "title": "Time Management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/change-management/",
+     "title": "Change Management",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/the-role-of-leadership-in-employee-engagement/",
+     "title": "The role of leadership in employee engagement",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/servant-leadership-transforms-workplace-culture/",
+     "title": "Servant Leadership: How it transforms workplace culture",
+     "core": false,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/skill-will-matrix-a-simple-guide-for-managers/",
+     "title": "Skill Will Matrix: A Manager\u2019s Guide to 4 Quadrants",
+     "core": false,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 30,
+   "stratum": "fixed50",
+   "asset": "Cognitive Aptitude Tests in Hiring: Validity Evidence, Score Cutoffs, Sample Questions & Role-Fit Selection Guide",
+   "n_relevant": 40,
+   "n_core": 35,
+   "catalogue_len": 80,
+   "recall_full": 0.675,
+   "recall_reachable": 0.818,
+   "recall_core": 0.771,
+   "precision": 0.338,
+   "precision_core": 0.338,
+   "capability_gap": 0.175,
+   "missed": [
+    {
+     "url": "https://testlify.com/test-library/fluid-intelligence/",
+     "title": "Fluid Intelligence",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/top-10-aptitude-assessment-questions-for-potential-candidates/",
+     "title": "Top 10 aptitude assessment questions for potential candidates",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/figural-inductive-reasoning-test/",
+     "title": "Figural Inductive Reasoning (Matrix Patterns)",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/abstract-reasoning/",
+     "title": "Abstract Reasoning",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/the-benefits-of-using-psychometric-tests-in-the-workplace/",
+     "title": "The benefits of using psychometric tests in the workplace",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/5-benefits-of-integrating-employment-assessments-into-your-hiring-process/",
+     "title": "5 benefits of integrating employment assessments into your hiring process",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/iq-test/",
+     "title": "IQ",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-effective-are-computer-skill-tests/",
+     "title": "Computer Skill Tests: Do They Predict Job Performance?",
+     "core": false,
+     "pool_sources": [
+      "dense"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-evaluate-candidates-skills-with-a-numerical-reasoning-assessment/",
+     "title": "How to evaluate candidates\u2019 skills with a numerical reasoning assessment",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    },
+    {
+     "url": "https://testlify.com/tailoring-aptitude-tests-for-specific-industries-best-practices/",
+     "title": "Tailoring aptitude tests for specific industries: Best practices",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/best-work-aptitude/",
+     "title": "Best Work Aptitude",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    },
+    {
+     "url": "https://testlify.com/pros-and-cons-of-pre-hire-assessments/",
+     "title": "Pros and cons of pre-hire assessments",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/potential-legal-risks-of-pre-hiring-assessments/",
+     "title": "What are the potential legal risks of pre-hiring assessments?",
+     "core": false,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 35,
+   "stratum": "fixed50",
+   "asset": "NYC Local Law 144 / Ethical AI Hiring Compliance Guide: Reading a Bias Audit + State-by-State Vendor Checklist",
+   "n_relevant": 29,
+   "n_core": 6,
+   "catalogue_len": 75,
+   "recall_full": 1.0,
+   "recall_reachable": 1.0,
+   "recall_core": 1.0,
+   "precision": 0.387,
+   "precision_core": 0.08,
+   "capability_gap": 0.0,
+   "missed": []
+  },
+  {
+   "idx": 39,
+   "stratum": "random",
+   "asset": "AI Proctoring Buyer's Guide: Methodology, False-Positive Rates, Candidate Experience & NYC LL 144 / Mode-by-Stage Selection",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 55,
+   "stratum": "comparison",
+   "asset": "Virtual Job Tryout / Assessment Center vs Skills Test: Role-by-Role Comparison Guide",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 63,
+   "stratum": "entity",
+   "asset": "Turnover & Attrition Risk Calculator: Build a Flight-Risk Score from Assessment Data + Cost-per-Departure Benchmarks",
+   "n_relevant": 32,
+   "n_core": 32,
+   "catalogue_len": 79,
+   "recall_full": 0.844,
+   "recall_reachable": 0.931,
+   "recall_core": 0.844,
+   "precision": 0.342,
+   "precision_core": 0.342,
+   "capability_gap": 0.094,
+   "missed": [
+    {
+     "url": "https://testlify.com/employee-retention-what-is-the-cost-of-losing-talent/",
+     "title": "Employee retention: What is the cost of losing talent?",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/retention-strategy/",
+     "title": "Retention Strategy",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/employee-retention/",
+     "title": "Employee Retention",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-use-personality-test-for-employee-retention/",
+     "title": "How to use personality test data for employee retention",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/top-must-ask-exit-interview-questions-for-insightful-feedback/",
+     "title": "25 exit interview questions HR must ask in 2026 (+ the heard framework)",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 67,
+   "stratum": "comparison",
+   "asset": "Internal vs External Hiring Decision Guide: When to Assess Internally vs Externally + Promotion-Readiness Rubric",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 68,
+   "stratum": "comparison",
+   "asset": "Hard Skills vs Soft Skills Assessment Guide: Which to Test, How, and What the Data Shows (with Decision Matrix)",
+   "n_relevant": 19,
+   "n_core": 19,
+   "catalogue_len": 79,
+   "recall_full": 0.737,
+   "recall_reachable": 0.875,
+   "recall_core": 0.737,
+   "precision": 0.177,
+   "precision_core": 0.177,
+   "capability_gap": 0.158,
+   "missed": [
+    {
+     "url": "https://testlify.com/types-of-pre-employment-tests/",
+     "title": "10 types of pre-employment tests for hiring top talent",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/recruiter-cheat-sheet-how-to-assess-technical-roles/",
+     "title": "How to assess technical skills: a recruiter\u2019s cheat sheet",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-to-assess-technical-skills/",
+     "title": "How to assess technical skills effectively for job positions in tech",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/skills-assessment-types/",
+     "title": "Skills assessment types",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    },
+    {
+     "url": "https://testlify.com/importance-of-assessing-problem-solving-skills-in-recruitment-for-innovative-solutions/",
+     "title": "How to evaluate problem solving skills of candidates",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 78,
+   "stratum": "fixed50",
+   "asset": "AI in Recruitment 2026: Benchmark Study on Adoption, Time-to-Hire Gains & Bias Outcomes",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 79,
+   "stratum": "entity",
+   "asset": "Technical Recruiting Cheat Sheet: Skills to Screen for 30+ Tech Roles, With Assessment Recommendations & Red-Flag Questions",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 100,
+   "stratum": "fixed50",
+   "asset": "AI in Hiring, Disentangled: Assessment AI vs. Resume-Screening vs. HR-Ops AI",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 102,
+   "stratum": "fixed50",
+   "asset": "Hiring Compliance Checklist: EEOC, UGESP, Adverse Impact & Pre-Employment Assessment Legal/Privacy Requirements",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 103,
+   "stratum": "fixed50",
+   "asset": "Free C++ Developer Skills Test",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 121,
+   "stratum": "fixed50",
+   "asset": "Free Quantitative Aptitude Test",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 124,
+   "stratum": "random",
+   "asset": "Free Admin & Office Roles Aptitude Test",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 126,
+   "stratum": "fixed50",
+   "asset": "Free Culture Add / Culture-Fit Assessment",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 128,
+   "stratum": "comparison",
+   "asset": "Degree vs. Skills & Credential Verification: Decision Guide + Where Skills Tests Fill the Gaps",
+   "n_relevant": 21,
+   "n_core": 21,
+   "catalogue_len": 76,
+   "recall_full": 0.571,
+   "recall_reachable": 0.706,
+   "recall_core": 0.571,
+   "precision": 0.158,
+   "precision_core": 0.158,
+   "capability_gap": 0.19,
+   "missed": [
+    {
+     "url": "https://testlify.com/benefits-of-skills-based-hiring/",
+     "title": "Exploring the benefits of skills-based hiring strategies for your organization",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/importance-of-computer-skills-tests-in-job-interviews/",
+     "title": "Importance of computer skills tests in job interviews",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/legal-education-skill-based-testing/",
+     "title": "Why legal education needs skill-based testing for real-world success",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/background-verification/",
+     "title": "Background Verification",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/candidate-dishonesty/",
+     "title": "Candidate dishonesty: Key red flags",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/computer-skill-test-predict-candidate-fit/",
+     "title": "Can a computer skill test predict candidate fit",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/edd-graduates-leadership-skills-assessments/",
+     "title": "How online EdD graduates can prove leadership skills with objective assessments",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/verify-candidate-credibility-with-background-checks-and-references/",
+     "title": "Verify candidate credibility with background checks and references",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/benefits-of-skills-based-hiring-for-recruiters/",
+     "title": "Benefits of skills-based hiring for recruiters",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 153,
+   "stratum": "fixed50",
+   "asset": "Adaptive vs. Fixed-Form Assessment Comparison: When to Use Each (+ What the Score Report Tells You)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 154,
+   "stratum": "fixed50",
+   "asset": "Free SEO Copywriting Skills Test",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 168,
+   "stratum": "entity",
+   "asset": "Admin & Receptionist Skills Assessment Guide",
+   "n_relevant": 24,
+   "n_core": 24,
+   "catalogue_len": 80,
+   "recall_full": 0.917,
+   "recall_reachable": 1.0,
+   "recall_core": 0.917,
+   "precision": 0.275,
+   "precision_core": 0.275,
+   "capability_gap": 0.083,
+   "missed": [
+    {
+     "url": "https://testlify.com/job-description-templates/front-office-manager/",
+     "title": "Front Office Manager",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/test-library/numeric-data-entry-typing-test-10-key-test/",
+     "title": "Numeric Data Entry Typing Test (10-Key)",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 169,
+   "stratum": "fixed50",
+   "asset": "WordPress Developer Skills Assessment Guide",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 175,
+   "stratum": "entity",
+   "asset": "Free MS Office Skills Test (Word + Excel)",
+   "n_relevant": 26,
+   "n_core": 26,
+   "catalogue_len": 79,
+   "recall_full": 0.962,
+   "recall_reachable": 0.962,
+   "recall_core": 0.962,
+   "precision": 0.316,
+   "precision_core": 0.316,
+   "capability_gap": 0.0,
+   "missed": [
+    {
+     "url": "https://testlify.com/test-library/microsoft-access/",
+     "title": "Microsoft Access",
+     "core": true,
+     "pool_sources": [
+      "dense"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 177,
+   "stratum": "fixed50",
+   "asset": "Free Project Management Aptitude Test",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 178,
+   "stratum": "fixed50",
+   "asset": "Innate vs Acquired Skills in Hiring: Which to Test for Which Roles (+ Assessment Selector)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 180,
+   "stratum": "fixed50",
+   "asset": "Free Abstract Reasoning Test",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 187,
+   "stratum": "fixed50",
+   "asset": "Free Call Center Candidate Assessment Guide",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 192,
+   "stratum": "fixed50",
+   "asset": "Free Skills Assessment Certificates: What They Signal, How to Earn One, and Sample Questions per Test",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 197,
+   "stratum": "comparison",
+   "asset": "AI vs. Human in Hiring: Decision Framework with Scoring Rubric & Assessment Review",
+   "n_relevant": 21,
+   "n_core": 21,
+   "catalogue_len": 87,
+   "recall_full": 0.667,
+   "recall_reachable": 0.875,
+   "recall_core": 0.667,
+   "precision": 0.161,
+   "precision_core": 0.161,
+   "capability_gap": 0.238,
+   "missed": [
+    {
+     "url": "https://testlify.com/know-about-ethical-dimension-of-ai-in-recruitment/",
+     "title": "Know everything about the ethical dimension of AI in recruitment",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/is-ai-a-threat-to-recruiters-and-hr-professionals/",
+     "title": "Is AI a threat to recruiters and HR professionals?",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-ai-recruitment-can-positively-improve-recruitment/",
+     "title": "How AI recruitment can positively improve recruitment",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/hr-glossary/artificial-intelligence-ai/",
+     "title": "Artificial Intelligence (AI) in HR",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/ai-vs-human-proctoring/",
+     "title": "AI vs human proctoring: What works best?",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/generative-ai-enhance-candidate-skills-assessments/",
+     "title": "How does generative AI enhance candidate skills assessments?",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/advantages-challenges-of-generative-ai-in-recruitment/",
+     "title": "Advantages and challenges of implementing generative AI in recruitment",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 204,
+   "stratum": "fixed50",
+   "asset": "Personality Assessment in Hiring: Using Validated Instruments Without Adverse Impact",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 222,
+   "stratum": "fixed50",
+   "asset": "React Native Developer Interview Guide (iOS, Android, Cross-Platform)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 233,
+   "stratum": "fixed50",
+   "asset": "Free Numerical Reasoning Test for Hiring: Sample Questions by Difficulty + Role Benchmarks",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 235,
+   "stratum": "entity",
+   "asset": "Free QA Automation Skills Test (Selenium/Cypress/Playwright)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 236,
+   "stratum": "fixed50",
+   "asset": "Free SAP SD Consultant/Analyst Assessment",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 242,
+   "stratum": "random",
+   "asset": "Power BI Interview Question Bank + Data Analyst Skills Assessment",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 260,
+   "stratum": "fixed50",
+   "asset": "Free Embedded C Skills Test (RTOS vs Bare-Metal)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 262,
+   "stratum": "entity",
+   "asset": "Free MS Word Skills Test",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 266,
+   "stratum": "random",
+   "asset": "Language Proficiency Interview Guide for Global Hiring Teams",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 284,
+   "stratum": "random",
+   "asset": "Call Center Hiring Assessment Guide: Skills Tests by Role with Turnover Benchmarks and Sample Questions",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 286,
+   "stratum": "comparison",
+   "asset": "Aptitude Testing vs Skills Testing: When to Use Which (+ Role Selector & Sample Questions)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 300,
+   "stratum": "random",
+   "asset": "Learning Agility Assessment for Engineers",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 308,
+   "stratum": "fixed50",
+   "asset": "Pre-Employment Assessment Certifications & Standards 2026: EEOC, Validity & Adoption Compared",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 311,
+   "stratum": "fixed50",
+   "asset": "Bad Hire Cost Calculator: Estimate Your True Cost by Role, Seniority & Industry + Assessment ROI Offset",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 321,
+   "stratum": "random",
+   "asset": "12 Core Hiring & Assessment Decisions Every Talent Team Faces (method comparison guide)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 324,
+   "stratum": "fixed50",
+   "asset": "Skills-Test Candidate Rejection Email Templates: Stage-by-Stage Scripts + Assessment Feedback for Every Outcome",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 337,
+   "stratum": "fixed50",
+   "asset": "Free Entry-Level Hiring Skills Screener (grammar+reasoning+math)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 341,
+   "stratum": "fixed50",
+   "asset": "Skills Gap at Hire vs. Post-Hire Upskilling Report",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 342,
+   "stratum": "random",
+   "asset": "Free Data-Entry Speed & Accuracy Test",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 356,
+   "stratum": "fixed50",
+   "asset": "Global Skills Assessment Adoption Index: Which Countries and Industries Adopt Pre-Employment Testing Fastest",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 360,
+   "stratum": "entity",
+   "asset": "Free JavaScript Skills Test: Public Sample Questions, Worked Answers, and a Shareable Score Certificate",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 367,
+   "stratum": "entity",
+   "asset": "Cloud Engineer Technical Assessment Guide",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 382,
+   "stratum": "entity",
+   "asset": "Selenium Automation Tester Hiring Assessment Guide",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 384,
+   "stratum": "fixed50",
+   "asset": "Pre-Employment Assessment: The Complete Guide to Test Types, Validity, Bias & Candidate Experience",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 393,
+   "stratum": "fixed50",
+   "asset": "Skills-Based Talent Management: How Assessment Data Drives Hiring, Development, Internal Mobility & Succession",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 404,
+   "stratum": "comparison",
+   "asset": "Psychometric Tests vs Skills Assessments: Which Actually Predicts Job Performance? (Original Data Study + Blended Stack Template)",
+   "n_relevant": 29,
+   "n_core": 29,
+   "catalogue_len": 80,
+   "recall_full": 0.69,
+   "recall_reachable": 0.741,
+   "recall_core": 0.69,
+   "precision": 0.25,
+   "precision_core": 0.25,
+   "capability_gap": 0.069,
+   "missed": [
+    {
+     "url": "https://testlify.com/the-impact-of-employment-testing-on-hiring-success/",
+     "title": "The impact of employment testing on hiring success",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/competency-based-assessment/",
+     "title": "Competency-based assessment: how to build and use one in 2026",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/use-skill-assessments-data-to-make-better-hiring/",
+     "title": "Use skill assessments data to make better hiring decisions",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/skills-assessment-platform/",
+     "title": "Skills assessment platform",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/identify-top-talent-without-lengthy-interviews-with-skill-assessments/",
+     "title": "Identify top talent using skill assessments",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/best-skills-assessment-question-libraries/",
+     "title": "Best skills assessment question libraries: 3500+ skills coverage (Tech & non-tech)",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/what-is-pre-hire-assessment/",
+     "title": "What is a pre-hire assessment? A complete guide",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/common-employment-assessments-and-when-to-use-them/",
+     "title": "Common types of employment assessments and when to use them?",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/using-personality-tests-for-hiring-astrology-or-science/",
+     "title": "Using personality tests for hiring \u2013 astrology or science?",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 413,
+   "stratum": "random",
+   "asset": "Screening Nonlinear, Passive & Global Candidates: Skills-Based Assessment Frameworks",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 427,
+   "stratum": "fixed50",
+   "asset": "Assessment Centre vs. Online Skills Test: When Each Fits, with Cost-Validity Comparison",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 429,
+   "stratum": "comparison",
+   "asset": "Skills Tests vs Certifications vs Work Experience: Which Hiring Signal Actually Predicts Performance",
+   "n_relevant": 27,
+   "n_core": 27,
+   "catalogue_len": 80,
+   "recall_full": 0.593,
+   "recall_reachable": 0.842,
+   "recall_core": 0.593,
+   "precision": 0.2,
+   "precision_core": 0.2,
+   "capability_gap": 0.296,
+   "missed": [
+    {
+     "url": "https://testlify.com/how-to-use-psychometric-tests-to-predict-job-performance/",
+     "title": "How to use psychometric tests to predict job performance",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/research-about-skills-assessment/",
+     "title": "What does the research say about skills assessment?",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/real-world-examples-of-how-sjts-predict-job-performance/",
+     "title": "Real-world examples of how SJTs predict job performance",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/importance-of-computer-skills-tests-in-job-interviews/",
+     "title": "Importance of computer skills tests in job interviews",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/legal-education-skill-based-testing/",
+     "title": "Why legal education needs skill-based testing for real-world success",
+     "core": true,
+     "pool_sources": [
+      "keyword"
+     ]
+    },
+    {
+     "url": "https://testlify.com/the-benefits-of-using-hiring-assessments-in-the-recruitment-process/",
+     "title": "The benefits of using hiring assessments in the recruitment process",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/benefits-of-pre-hiring-assessments/",
+     "title": "How pre-hiring assessments can help recruiters make better hiring decisions",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/criterion-related-validity/",
+     "title": "What is criterion-related validity? Definition & importance",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/how-skills-assessments-improve-recruitment-process/",
+     "title": "How skills assessments can improve your recruitment process",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/what-is-pre-hire-assessment/",
+     "title": "What is a pre-hire assessment? A complete guide",
+     "core": true,
+     "pool_sources": [
+      "dense",
+      "expand"
+     ]
+    },
+    {
+     "url": "https://testlify.com/predicting-job-performance-the-big-five-as-a-recruitment-tool/",
+     "title": "Predicting job performance: The Big Five as a recruitment tool",
+     "core": true,
+     "pool_sources": [
+      "expand"
+     ]
+    }
+   ]
+  },
+  {
+   "idx": 434,
+   "stratum": "fixed50",
+   "asset": "Startup Hiring Playbook: Screening 100+ Applicants with a Tiny Team Using Skills Tests",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 435,
+   "stratum": "fixed50",
+   "asset": "Skills Assessment vs Competency Mapping Tools: Which to Use for Hiring vs Workforce Planning",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 443,
+   "stratum": "random",
+   "asset": "Cross-Functional Leader Hiring Assessment Kit: Structured Questions with Behavioral Scoring Rubrics",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 445,
+   "stratum": "fixed50",
+   "asset": "The AI Interview Cheating Report: How Often Candidates Read AI Answers Live \u2014 and Whether Anyone Can Tell",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 446,
+   "stratum": "fixed50",
+   "asset": "Death of the Resume Filter: What Share of Applications Are Now AI-Generated \u2014 and What Still Signals a Real Candidate",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 447,
+   "stratum": "fixed50",
+   "asset": "The Degree Doesn't Predict the Hire: Performance Data on Capability-Screened vs Degree-Required Roles",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 448,
+   "stratum": "fixed50",
+   "asset": "Culture Fit or Cover Story? How Often 'Soft-Skill' Rejections Are Really Bias \u2014 and What Actually Predicts On-the-Job Fit",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 449,
+   "stratum": "fixed50",
+   "asset": "Does LeetCode Predict the Engineer? A Data Study of Algorithm-Trivia Screens vs Real Performance",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 450,
+   "stratum": "fixed50",
+   "asset": "The Proxy Candidate Problem: How Fake and Stolen-Identity Applicants Pass Remote Screening",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 453,
+   "stratum": "fixed50",
+   "asset": "Skills-Based Hiring Statistics (sourced, updated yearly)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 455,
+   "stratum": "fixed50",
+   "asset": "The Structured Interview Checklist (interactive + downloadable)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 457,
+   "stratum": "fixed50",
+   "asset": "Free Practice Tests + Public Sample Question Bank",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 459,
+   "stratum": "fixed50",
+   "asset": "The Complete List of Skills to Test, by Role (500+)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 465,
+   "stratum": "fixed50",
+   "asset": "What's Your Hiring-Bias Profile? (quiz + shareable result)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 467,
+   "stratum": "fixed50",
+   "asset": "We Analyzed [N] Assessments: What Actually Predicts a Good Hire",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 469,
+   "stratum": "fixed50",
+   "asset": "The Skills-Gap Index (which skills each industry is short on, annual)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  },
+  {
+   "idx": 470,
+   "stratum": "fixed50",
+   "asset": "Most In-Demand Skills, Ranked (quarterly)",
+   "n_relevant": 0,
+   "note": "no owned pages (nothing to recall \u2014 likely a novel topic)"
+  }
+ ]
+}
