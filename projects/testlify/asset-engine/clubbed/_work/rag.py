@@ -11,7 +11,7 @@ RAG for the asset-engine reuse check (Stages 1 & 2). Improvements over v1:
 
 Key: VOYAGE_API_KEY env var, else first `pa-...` token in ~/.testlify-access.md (never printed).
 """
-import csv, json, os, re, sys, time, urllib.request, urllib.error
+import csv, json, os, re, subprocess, sys, time, urllib.request, urllib.error
 import numpy as np
 from collections import defaultdict
 csv.field_size_limit(1 << 24)
@@ -38,6 +38,21 @@ RECALL_N = 75          # JOB B (recall, human catalogue): dense top-N shown, NO 
 MAXDF_KW = 25          # a keyword phrase matching > this many corpus pages is too generic → dropped
                        # (e.g. "skills testing" → 111 pages; "resume screening" → 5, kept)
 KW_ADD   = 12          # cap on net-new keyword pages appended to the dense catalogue per idea
+# ── QUERY EXPANSION on Job B (2026-07 accuracy-test lever) ────────────────────
+# The pooled, Claude-judged accuracy test found 71% of Job-B recall MISSES are pages
+# only reachable by expanding the asset into its sub-angle queries — the single
+# largest recall lever (smoke: recall_reachable 0.86 while recall_full lagged on
+# expansion-only pages). Claude (Haiku) splits each asset into up to EXPAND_Q
+# sub-angle search queries; each query's dense top-EXP_DENSE_N is unioned into the
+# catalogue as a dense-ranked, capped tail — exactly like the keyword tail. Results
+# are cached to disk (query_expansion_cache.json) so re-runs cost ZERO Claude quota
+# and production runs are repeatable. Set EXPAND_Q=0 (or make the `claude` CLI absent)
+# to disable → catalogue is byte-identical to the pre-expansion behaviour.
+EXPAND_Q     = int(os.environ.get("EXPAND_Q", "5"))   # sub-angle queries per asset (0 = off)
+EXP_DENSE_N  = 30      # dense depth scanned per expansion query for candidate pages
+EXP_ADD      = 20      # cap on net-new expansion pages appended to the catalogue per idea (lever)
+EXPAND_MODEL = os.environ.get("EXPAND_MODEL", "claude-haiku-4-5")  # cheap; expansion is simple splitting
+EXPAND_CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "query_expansion_cache.json")
 CHUNK_CHARS = 4800
 OVERLAP = 600
 MAX_ITEMS = 64
@@ -143,14 +158,74 @@ def load_topic_keywords(path):
         return {}
     return {k["i"]: k.get("keywords", []) for k in json.load(open(path, encoding="utf-8"))}
 
-def catalogue_for(dense_order, idx, kwmap, postings, recall_n=RECALL_N, kw_add=KW_ADD):
-    """Job B catalogue = dense top-recall_n  ∪  DF-gated keyword tail (dense-ordered, capped)."""
+# ── query-expansion helpers (Job B lever) ────────────────────────────────────
+_expand_cache = None
+def _load_expand_cache():
+    global _expand_cache
+    if _expand_cache is None:
+        try:
+            _expand_cache = json.load(open(EXPAND_CACHE, encoding="utf-8")) if os.path.exists(EXPAND_CACHE) else {}
+        except Exception:
+            _expand_cache = {}
+    return _expand_cache
+
+def expand_queries(asset, n=EXPAND_Q):
+    """Claude (Haiku) → up to n sub-angle search queries for `asset`, cached to disk.
+    Returns [] (→ no expansion, identical to pre-expansion catalogue) when disabled or
+    the CLI call fails, so the retrieval path degrades gracefully with zero cost."""
+    key = (asset or "").strip()
+    if not key or n <= 0:
+        return []
+    cache = _load_expand_cache()
+    if key in cache:
+        return cache[key][:n]
+    prompt = ("Given this content asset idea, output ONLY a JSON array of up to %d short "
+              "search queries capturing its distinct sub-angles (for retrieving existing "
+              "articles on each angle). No prose.\n\nASSET: %s" % (n, key))
+    env = {k: v for k, v in os.environ.items() if k != "ANTHROPIC_API_KEY"}
+    try:
+        out = subprocess.run(["claude", "-p", "--model", EXPAND_MODEL, prompt],
+                             capture_output=True, text=True, env=env, timeout=120).stdout
+        m = re.search(r"\[.*\]", out, re.S)
+        qs = json.loads(m.group(0)) if m else []
+        qs = [q for q in qs if isinstance(q, str) and q.strip()][:n]
+    except Exception as e:
+        print("   expand fallback:", str(e)[:60], file=sys.stderr)
+        return []
+    cache[key] = qs
+    try:
+        json.dump(cache, open(EXPAND_CACHE, "w", encoding="utf-8"), ensure_ascii=False)
+    except Exception:
+        pass
+    return qs
+
+def _dense_order(qvec, Vt, Vb, urls, body_uidx):
+    """Blended title+body dense ranking of non-foreign pages for a single query vector."""
+    bb = np.full(len(urls), -1.0, dtype=np.float32)
+    np.maximum.at(bb, body_uidx, Vb @ qvec)
+    blended = ALPHA * (Vt @ qvec) + (1 - ALPHA) * bb
+    return [urls[k] for k in np.argsort(blended)[::-1] if not foreign(urls[k])]
+
+def catalogue_for(dense_order, idx, kwmap, postings, recall_n=RECALL_N, kw_add=KW_ADD,
+                  exp_orders=None, exp_dense_n=EXP_DENSE_N, exp_add=EXP_ADD):
+    """Job B catalogue = dense top-recall_n  ∪  DF-gated keyword tail  ∪  query-expansion
+    tail. Each tail is dense-ranked and capped. exp_orders is a list of dense orders, one
+    per Claude sub-angle query; when None/empty the result is identical to dense∪keyword."""
     recall = dense_order[:recall_n]
     seen = set(recall)
     rank = {u: i for i, u in enumerate(dense_order)}
     khits = keyword_hits(kwmap.get(idx, []), postings)
-    tail = [u for u in sorted(khits, key=lambda u: rank.get(u, 1 << 30)) if u not in seen][:kw_add]
-    return recall + tail
+    ktail = [u for u in sorted(khits, key=lambda u: rank.get(u, 1 << 30)) if u not in seen][:kw_add]
+    seen.update(ktail)
+    etail = []
+    if exp_orders:
+        best = {}   # page -> best (smallest) rank across any expansion query's top-exp_dense_n
+        for order in exp_orders:
+            for pos, u in enumerate(order[:exp_dense_n]):
+                if u not in seen and (u not in best or pos < best[u]):
+                    best[u] = pos
+        etail = sorted(best, key=lambda u: best[u])[:exp_add]
+    return recall + ktail + etail
 
 def chunks(text):
     text = (text or "").strip()
@@ -276,6 +351,20 @@ def do_retrieve(clubbed_csv, idx_dir, content_csv):
     queries = [query_text(r) for r in rows]
     Q = embed(queries, "query"); Q /= (np.linalg.norm(Q, axis=1, keepdims=True) + 1e-9)
 
+    # ── QUERY EXPANSION (Job B recall lever) — build sub-angle queries per idea (cached,
+    # Haiku), embed them once in bulk, and slice back per idea. Zero cost on a warm cache.
+    exp_qs = [expand_queries(r.get("Asset") or "") for r in rows]
+    exp_slices, off = [], 0
+    for qs in exp_qs:
+        exp_slices.append((off, off + len(qs))); off += len(qs)
+    flat = [q for qs in exp_qs for q in qs]
+    EQ = embed(flat, "query") if flat else Q[:0]
+    if len(EQ):
+        EQ /= (np.linalg.norm(EQ, axis=1, keepdims=True) + 1e-9)
+    print(f"retrieve: query-expansion {len(flat)} sub-queries over "
+          f"{sum(1 for qs in exp_qs if qs)}/{len(rows)} ideas "
+          f"(model {EXPAND_MODEL}; EXPAND_Q={EXPAND_Q})", file=sys.stderr)
+
     for n, r in enumerate(rows):
         q = Q[n]
         tsim = Vt @ q                                   # per page
@@ -296,7 +385,10 @@ def do_retrieve(clubbed_csv, idx_dir, content_csv):
         # (2026-07 de-biased study: widening K 15→50 lifts recall ~0.34→0.66 (~0.79 @75);
         #  rerank truncation to 15 is what loses on-topic siblings. The keyword tail then
         #  recovers exact-entity pages dense buries past K — e.g. /ai-resume-screener/ @63.)
-        catalogue = catalogue_for(dense_order, n, kwmap, postings)
+        #  Query-expansion tail adds pages only the asset's sub-angle queries reach (71% of misses).
+        a, b = exp_slices[n]
+        exp_orders = [_dense_order(EQ[j], Vt, Vb, urls, body_uidx) for j in range(a, b)]
+        catalogue = catalogue_for(dense_order, n, kwmap, postings, exp_orders=exp_orders)
 
         # LINKS ONLY — store links, not content. Any step needing page text fetches on
         # demand from content-database.csv (holds Full content) or the live page.
@@ -334,13 +426,26 @@ def do_catalogue(clubbed_csv, idx_dir, content_csv):
         return a or (r.get("Asset") or "").strip() or (r.get("Distinct angle") or "").strip() or "untitled"
     Q = embed([query_text(r) for r in rows], "query"); Q /= (np.linalg.norm(Q, axis=1, keepdims=True) + 1e-9)
 
+    # Query-expansion tail (Job B lever). On a warm query_expansion_cache.json this is free;
+    # a cold cache incurs Haiku calls (or set EXPAND_Q=0 to skip and match dense∪keyword).
+    exp_qs = [expand_queries(r.get("Asset") or "") for r in rows]
+    exp_slices, off = [], 0
+    for qs in exp_qs:
+        exp_slices.append((off, off + len(qs))); off += len(qs)
+    flat = [q for qs in exp_qs for q in qs]
+    EQ = embed(flat, "query") if flat else Q[:0]
+    if len(EQ):
+        EQ /= (np.linalg.norm(EQ, axis=1, keepdims=True) + 1e-9)
+
     for n, r in enumerate(rows):
         q = Q[n]
         bestbody = np.full(len(urls), -1.0, dtype=np.float32)
         np.maximum.at(bestbody, body_uidx, Vb @ q)
         blended = ALPHA * (Vt @ q) + (1 - ALPHA) * bestbody
         dense_order = [urls[k] for k in np.argsort(blended)[::-1] if not foreign(urls[k])]
-        catalogue = catalogue_for(dense_order, n, kwmap, postings)
+        a, b = exp_slices[n]
+        exp_orders = [_dense_order(EQ[j], Vt, Vb, urls, body_uidx) for j in range(a, b)]
+        catalogue = catalogue_for(dense_order, n, kwmap, postings, exp_orders=exp_orders)
         rag_urls = re.findall(r"(https?://\S+?)(?:\s*\([\-\d.]+\))?(?:;|$)", r.get("RAG candidates", ""))
         r["Topic pages we own"] = "; ".join(f"{tmap[u]} — {u}" for u in catalogue)
         r["Reference links"] = "; ".join(dict.fromkeys(rag_urls + catalogue))
